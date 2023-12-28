@@ -4,7 +4,7 @@ REM Install packages
 pip install --upgrade pip && pip install -r requirements.txt
 
 REM Run tests
-python -m pytest --vv test_hello.py
+python -m pytest -v test_*.py
 
 REM Format code
 black *.py
